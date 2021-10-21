@@ -11,7 +11,9 @@
 // ==/UserScript==
 (function() {
     'use strict';
-    const user = 'aa5e53c1e38366e466a99bdb49604c47';
+    //Put an user id HERE, must be a md5 
+    // http://www.md5.cz/
+    const user = '';
 
     setTimeout(function(){
         var script = document.createElement("script");
