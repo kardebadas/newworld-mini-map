@@ -49,7 +49,6 @@
             onload:     function (resp) {
                 try{
                     let json = JSON.parse(resp.response);
-                    console.log(json);
                     updateMapPosition(json);
                 }catch(e){
                     console.error(e);
@@ -63,7 +62,6 @@
 
     function updateMapPosition(pos){
         let obj = {lat: pos.y-14336, lng: pos.x};
-        console.log(obj);
         marker.setLatLng(obj);
         map.panTo(obj);
     }
